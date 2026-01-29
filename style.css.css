@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Tela inicial */
+#tela-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#btn-entrar {
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #ff4081;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#btn-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Tela aniversário */
+#tela-aniversario {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#tela-aniversario h1 {
+    font-size: 48px;
+    color: white;
+    animation: aparecer 1.5s ease;
+}
+
+#tela-aniversario h2 {
+    font-size: 36px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+#tela-aniversario img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    margin: 25px 0;
+    animation: aparecer 2s ease;
+}
+#tela-aniversario p {
+    font-size: 22px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
